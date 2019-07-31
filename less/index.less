@@ -54,6 +54,190 @@ table {
 }
 
 html, body {
-    height: 100%;
+		height: 100%;
+		font-family: 'Roboto', sans-serif;
 }
 
+@mid-gray: #555;
+@hover-text: red;
+@background-color: gray; 
+
+
+.container {
+	background-image: linear-gradient(to right top, #d4111d, #df0054, #d0008c, #a127c3, #1254eb);
+	color: #fff;
+}
+
+header {
+	nav {
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+		padding: 30px;
+		a {
+			text-decoration: none;
+			color: #fff;
+			text-transform: uppercase;
+			margin: 0 20px;
+			font-size: 0.9275rem;
+			&:hover {
+				color: @hover-text;
+			}
+		}
+	}
+	
+	h1 {
+		// text-align: center;
+		margin: 40px 0;
+		font-size: 2rem;
+	}
+}
+
+section {
+	height: 100vh;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 20px;
+	
+	h2 {
+		text-align: center;
+		margin-bottom: 40px;
+		font-size: 2rem;
+		text-transform: uppercase;	
+	}
+	p {
+		text-align: center;
+		letter-spacing: 1.3px;
+		line-height: 20px;	
+	}
+	
+	li {
+		letter-spacing: 1.3px;
+		line-height: 20px;	
+		text-align: center;
+		margin: 15px;
+	}
+	
+	span {
+		font-style: italic;
+	}
+	
+	@media (max-width: 500px) {
+		height: 400px;
+		margin: 20px;
+	}
+}
+
+.hero {
+	background: @background-color;
+	padding: 2rem 2rem 3rem;
+
+	.image-box {
+		width: 100vw;
+		p {
+			padding: 15px 0;
+		}
+	}
+
+	img {
+		width: 320px;
+	}
+	
+	hr {
+		margin-top: 40px;
+		border-color: #555;
+	}
+
+	h1 {
+		font-size: 3.75rem;
+		font-weight: 300;
+	}
+}
+
+
+.buttons() {
+	width: 200px;
+	background: transparent;
+	border: 1px solid #222;
+	text-transform: uppercase;
+	padding: 10px;
+	margin: 20px 0 0 40px;
+	outline: none;
+	border-radius: 4px;
+}
+
+form {
+	width: 100%;
+	padding-top: 120px;
+	margin: 0 auto;
+	text-align: center;
+	
+	input {
+		padding: 10px;
+		font-size: 16px;
+		text-transform: capitalize;
+		margin: 10px;
+		width: 356px;
+	}
+	textarea {
+		padding: 10px;
+		font-size: 16px;
+		text-transform: capitalize;
+		margin: 10px;
+		width: 80%;
+	}
+	
+	button {
+
+		.buttons();
+
+		&:hover {
+			background: #222;
+			color: #fff;
+			cursor: pointer;
+			font-weight: 700;
+			letter-spacing: 2px;
+			transition: font-weight 0.2s, letter-spacing 0.2s ease-in-out;
+		}
+		
+		&:active {
+			background: red;
+			color: #444;
+		}
+	}
+}
+	
+
+
+.contact-info {
+	padding: 20px;
+	text-align: center;
+
+	h2 {
+		font-weight: 200;
+	}
+	a {
+		text-decoration: none;
+		color: #555;
+		&:hover {
+			color: @hover-text;	
+		}
+	}
+}
+
+footer {
+	padding: 40px 0;
+	margin-top: 5rem;
+	bottom: 0;
+	background: @mid-gray;
+	color: #fff;
+	text-align: center;
+
+	@media (max-width: 500px) {
+		position: relative;
+		margin-top: 80vh;
+		height: 120px;
+		bottom: 0;
+		left: 0;
+	}
+}

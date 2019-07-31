@@ -7,13 +7,94 @@
   <title>My Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700&display=swap" rel="stylesheet">
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  <h1>My Resume</h1>
-</body>
-</html>
+  <div class="container">
+
+    <header>
+      <nav>
+        <a href="#intro">Intro</a>
+        <a href="#">Skills</a>
+        <a href="#">Work History</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="hero">
+        <div class="image-box">
+          <img src="images/hero-image.jpg" alt="">
+          <h1>Spider-Man | Full Stack Web Slinger</h1>
+        </div>
+        <hr>
+        <p>Friendly neighborhood Spider-Man</p>
+      </div>
+    </header>
+    
+    
+    <section class="intro">
+      <h2>Intro</h2>
+      <p>
+        Hi, I'm just a kid but alot has happened to me. I got bit by a radio active spider and
+        basically things have been very different since then. I also know a lot of math sciency
+        stuff but nobody ever talks about that.
+      </p>
+    </section>
+    
+    <section class="skills">
+      <h2>Skills</h2>
+      
+      <ul>
+        <li>Climbing Stuff</li>
+        <li>Shooting webs</li>
+        <li>Hanging out upside-down</li>
+        <li>I make <span>websites</span> on the side.</li>
+      </ul>
+      
+    </section>
+    
+    <section class="work-history">
+      <h2>Work History</h2>
+      
+      <p>
+        It's kinda classified but I fight crime. I guess you could say it's technically freelance but
+        the benefits are pretty good so it's kinda not. 
+      </p>
+    </section>
+    
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Stop by and say ​“hi”. Or drop me a note.</p>
+      
+      
+      <form action="submit">
+        <div>
+          <input type="text" placeholder="first" required>
+          <input type="text" placeholder="last" required>
+        </div>
+        <div>
+          <input type="email" placeholder="email" required>
+          <input type="tel" placeholder="phone">
+        </div>
+        <textarea name="message" id="message" rows="15" placeholder="Message" required></textarea>
+        <button>Send</button>
+      </form>
+      
+      
+      
+      <div class="contact-info">
+        <h2>You can also reach me here.</h2>
+        <a href="tel:555-555-5555">(555) 555-5555</a> <br>
+        <a href="email:lhtorres@yahoo.com">lhtorres@yahoo.com</a>
+      </div>
+      
+    </section>
+    
+    <footer>
+      © 2019
+    </footer>
+  </div>
+  </body>
+  </html>
